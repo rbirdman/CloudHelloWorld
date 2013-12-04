@@ -10,9 +10,10 @@ ruleset HelloWorldApp {
     use module a41x196 alias SquareTag
   }
   dispatch {
+    notify("Dispatched");
   }
   global {
-   
+    notify("Global");
   }
   rule HelloWorld is active {
     select when web cloudAppSelected
@@ -20,6 +21,7 @@ ruleset HelloWorldApp {
         my_html = <<
             <h5>Hello, World! Number 3</h5>
         >>;
+        notify("Done with assignment");
     }
     {
         SquareTag:inject_styling();

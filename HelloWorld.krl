@@ -19,7 +19,7 @@ ruleset HelloWorldApp {
     pre {
         notify("Adding my_html");
         my_html = <<
-            <h5>Hello, World! Number 2</h5>
+            <h5>Hello, World! Number 3</h5>
         >>;
     }
     {

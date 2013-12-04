@@ -23,8 +23,8 @@ ruleset HelloWorldApp {
         my_html = <<
             <h5>Hello, World! Number 5</h5>
         >>;
-        notify("Done with assignment");
-        alert("Pre Alert");
+        //notify("Done with assignment");
+        //alert("Pre Alert");
     }
     {
         alert("Stuff");

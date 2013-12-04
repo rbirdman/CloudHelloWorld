@@ -18,12 +18,13 @@ ruleset HelloWorldApp {
     select when web cloudAppSelected
     pre {
         my_html = <<
-            <h5>Hello, World!</h5>
+            <h5>Hello, World! Number 2</h5>
         >>;
     }
     {
         SquareTag:inject_styling();
         CloudRain:createLoadPanel("Hello World", {}, my_html);
+        notify("This is a notification")
     }
   }
 }

@@ -30,7 +30,7 @@ ruleset HelloWorldApp {
         //alert("Stuff");
         SquareTag:inject_styling();
         CloudRain:createLoadPanel("Hello World", {}, my_html);
-        notify("This is a notification");
+        //notify("This is a notification");
     }
   }
 }

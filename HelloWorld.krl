@@ -17,7 +17,6 @@ ruleset HelloWorldApp {
   rule HelloWorld is active {
     select when web cloudAppSelected
     pre {
-        notify("Adding my_html");
         my_html = <<
             <h5>Hello, World! Number 3</h5>
         >>;

@@ -17,14 +17,14 @@ ruleset HelloWorldApp {
     select when web cloudAppSelected
     pre {
         my_html = <<
-            <h5>Hello, World! Match Professor's outline</h5>
+            <h5>Hello, World! Order switched on notifications</h5>
         >>;
     }
     {
-        SquareTag:inject_styling();
-        CloudRain:createLoadPanel("Hello World", {}, my_html);
         alert("Stuff");
         notify("This is a notification","This is subtext");
+        SquareTag:inject_styling();
+        CloudRain:createLoadPanel("Hello World", {}, my_html);
     }
   }
 }

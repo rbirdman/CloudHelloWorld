@@ -25,6 +25,7 @@ ruleset HelloWorldApp {
 
   rule show_form
   {
+    select when pageview url #.*#
     pre {
       a_form = <<
         <form id="my_form" onsubmit="return false">

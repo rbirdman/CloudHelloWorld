@@ -10,27 +10,21 @@ ruleset HelloWorldApp {
     use module a41x196 alias SquareTag
   }
   dispatch {
-    //notify("Dispatched");
-    //alert("Dispatched Alert");
   }
   global {
-    //notify("Global");
-    //alert("Global Alert);
   }
   rule HelloWorld is active {
     select when web cloudAppSelected
     pre {
         my_html = <<
-            <h5>Hello, World! Number 5</h5>
+            <h5>Hello, World! Match Professor's outline</h5>
         >>;
-        //notify("Done with assignment");
-        //alert("Pre Alert");
     }
     {
-        //alert("Stuff");
         SquareTag:inject_styling();
         CloudRain:createLoadPanel("Hello World", {}, my_html);
-        //notify("This is a notification");
+        alert("Stuff");
+        notify("This is a notification","This is subtext");
     }
   }
 }
